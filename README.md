@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+## Lets make something 😋
+
+>
+
+<img alt="Custom badge" src="https://img.shields.io/badge/By-Gourav 🍲-9cf">
+
+React.JS app which fetches different dishes from API and gives its
+description with ingredients to make it.
+
+.
+
+
+ link - https://lets-make-it.vercel.app/
+
+<p align="center">
+    <img alt="letsMakeitGourav" src="https://github.com/varuogm/LetsMakeIt/blob/main/ezgif.com-gif-maker%20(5).gif?raw=true"/>
+ 
+</p>
+
+.
+
+API from - [ EDMAM 🥘 ](https://www.edamam.com/)
+
+Find the best recipes from across the web. Filter by calories and diet. 
+
+-----
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
