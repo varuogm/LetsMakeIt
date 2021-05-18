@@ -1,6 +1,7 @@
 import React,{useEffect , useState} from 'react';
 import Recipe from './Recipe';
 import "./App.css";
+import Loading from './Loading';
 
 
 
@@ -8,10 +9,20 @@ const App= () => {
   const APP_ID =  process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_RECIPE_KEY;
 
+  const [isLoading ,setIsLoading]  = useState(true);
+
   const [recipes,setRecipes] = useState([]);
   const [search,setSearch] = useState("");
   const [query,setQuery] = useState('chicken');
   const [darkMode, setDarkMode] = useState(false);
+
+  
+useEffect(()=>{
+  setTimeout(()=>{
+  setIsLoading(false);
+  }, 2500);
+});
+
 
 useEffect( ()=> {
   getRecipes();
@@ -35,9 +46,11 @@ const getRecipes = async()=>{
   setSearch('');
 }
 
-  return (
-    <div className="App">
+  return ( 
+     <div>
+      { isLoading === true ? <Loading/>:
 
+    <div className="App">
       <div className={darkMode ? "dark-mode" : "light-mode"} >
       <div className="container">
         <span style={{ color: darkMode ? "grey" : "yellow" }}> 🔮 </span>
@@ -50,7 +63,7 @@ const getRecipes = async()=>{
         <span style={{ color: darkMode ? "#c96dfd" : "grey" }}> ✨ </span>
       </div>
       </div>
-      <h1 className="hungry">Feeling hungry,Try searching you FAV dish</h1>
+      <h1 className="hungry">Feeling  hungry , Try  searching  your FAV dish</h1>
        <form onSubmit={getSearch} className="search-form">
           <input className="search-bar" type="text" placeholder="Search your fav dish here 😋" value ={search} onChange ={updateSearch}/>
           <button  className="search-button" typeof="submit">
@@ -72,8 +85,10 @@ const getRecipes = async()=>{
          ingredients={recipe.recipe.ingredients}
          />
        ))}
+      
        </div>
-
+       <a href="#"  className ="topper" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">  Back  to  Top  </a>
+    </div>}
     </div>
   );
 };

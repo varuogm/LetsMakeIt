@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@1000&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script&display=swap');
 
 .App{
-  min-height: 100vh;font-family: "Jost", sans-serif;
+  min-height: 100vh;font-family: 'Amatic SC' ,'Dancing Script','Dancing Script' ,"Jost", sans-serif;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);*/
 }
@@ -48,17 +53,22 @@
 }
 
 .dark-mode {
-  background-color: #ee8c68;
-  background-image: linear-gradient(315deg, #ee8c68 0%, #ee8bb1 74%);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpOB0w1aI30fURJEzP5SF7sXzPXm5CfvBfmfhq7kj8cLx6y9h932YvhO7vwIYX3Sehz7U&usqp=CAU");
+
+  /*background-color: #ee8c68;
+  background-image: linear-gradient(315deg, #ee8c68 0%, #ee8bb1 74%);*/
   height: 100%;
   transition: background-color 0.25s ease-in-out;
 
 }
 
 .light-mode {
-  background-color: #9fa4c4;
+  /*background-color: #9fa4c4;
   background-color: #8989bb;
-  background-image: linear-gradient(315deg, #8989bb 0%, #a5a4cb 74%);
+  */
+background-image: url("https://t4.ftcdn.net/jpg/02/07/60/85/240_F_207608554_mptKqfDHeHZznA6XFMC3lM4tkLQdWad9.jpg");
+object-fit: contain;
+  /*background-image: linear-gradient(315deg, #8989bb 0%, #a5a4cb 74%);*/
   
   color: #333;
   height: 100%;
@@ -66,6 +76,7 @@
 }
 
 .container {
+  height : 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,3 +160,47 @@ input:checked + .slider:before {
 }
 
 
+
+.topper{
+  /*
+  font-family:'Amatic SC-cursive','jost';
+  display: flex;
+  color: rgb(0, 0, 0);
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background: linear-gradient(to left, #d0b21f8c, #ff4e50d4);
+
+  padding: .5px;
+  border-radius: 4px;
+  min-height:5vh;
+ 
+ */
+ display: flex;
+ position: fixed;
+ bottom: 20px;
+ left: 30px;
+ z-index: 99;
+ border: none;
+ /* outline: grey; */
+ background: #757F9A;
+ background: linear-gradient(to left, #f3f3f3, #d3b7e3);
+ color: #1d1c1c;
+ text-shadow: 0px 0px 15px black;
+ cursor: pointer;
+ padding: 8px;
+ border-radius: 100px;
+ font-size: 18px;
+
+}
+
+.laoding-text{
+
+min-height: 100vh;
+font-size: 250%;
+font-family: 'Amatic SC' ,'Dancing Script','Dancing Script' ,"Jost", sans-serif;
+font-color:linear-gradient(to right, #6A82FB, #FC5C7D);  
+
+}
