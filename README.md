@@ -1,51 +1,7 @@
-## Lets make something 😋
+# Getting Started with Create React App
 
->
-
-<img alt="Custom badge" src="https://img.shields.io/badge/By-Gourav M🍲-9cf">
-
-React.JS app which fetches different dishes from API and gives its
-description with ingredients to make it.
-also gives the type and category of the dish with calories content.
-
-.
-
-
-#### link - https://lets-make-it.vercel.app/
-
-<p align="center">
-    <img alt="letsMakeitGourav" src="https://github.com/varuogm/LetsMakeIt/blob/main/ezgif.com-gif-maker%20(5).gif?raw=true"/>
- 
-</p>
-
-.
-
-### API from - [ EDMAM 🥘 ](https://www.edamam.com/)
-
-Find the best recipes from across the web. Filter by calories and diet. 
-.
-
------
-
-
-### Additional improvements
-
-
-1) calories in int.
-2) removing blocked components.
-3) will be adding veg/nonveg badges and partition.
-
-  
-  
-.
-
-
-> contributions are always welcome
-
-.
-
- 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Available Scripts
 
 In the project directory, you can run:
